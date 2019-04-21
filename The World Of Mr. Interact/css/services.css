@@ -1,0 +1,35 @@
+.service-intro p{
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(243, 228, 11);
+}
+
+.service-intro p strong{
+    cursor: pointer;
+    font-style: italic;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+.service-intro p strong:hover{
+    color: azure;
+}
+
+.service-box{
+    background: rgba(32, 32, 32, 0.616);
+    border: 1px solid white;
+}
+
+.service-sections h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.service-sections ul{
+    list-style-type: square;
+    color: crimson;
+}
+
+.service-sections button{
+    margin-left: 35%;
+    margin-bottom: 5%;
+}

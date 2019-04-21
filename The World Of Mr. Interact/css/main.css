@@ -1,0 +1,20 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to right, #000428, #004e92); 
+}
+nav a{
+    color: white;
+    font-size: 1rem;
+}
+#page-title{
+    text-transform: uppercase;
+    margin-top: 2%; 
+    color: aliceblue;
+    font-family: 'Viga', sans-serif;
+    text-align: left;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+}

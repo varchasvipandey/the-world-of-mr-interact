@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!--AOS CSS CDN-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--Bootstrap CSS CDN-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--Bootstrap CSS Offline-->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!--External CSS-->
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/interact.css">
+        <!--Import Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Crete+Round|Fascinate+Inline|PT+Sans+Caption|Prompt|Righteous|Viga" rel="stylesheet">
+
+
+
+        <title>WT Mini Project</title>
+    </head>
+    <body class="interact-body">
+
+        <div class="container-fluid">
+            <div class="row">
+                <!--NAV BAR-->
+                <div class="col-sm-12">
+                    <nav class="nav nav-tabs justify-content-end">
+                        <a class="nav-link" href="../home.html">Home</a>
+                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link active" href="interact.html">Interact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </nav>
+                </div>  
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-11">
+                    <!--Content-->
+                    <div class="col-sm-12">
+                        <h1 id="page-title" onclick="theme_default()" data-aos="fade-right" data-aos-duration="1000">Interact</h1>
+                    </div>
+                    <div class="col-sm-12 interact-intro">
+                        <p data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">Welcome to the interact section of this website. This section is for those who have no hobbies, 
+                            no work to do and no friends. Basically for the people with no life. Before we jump into some formal 
+                            introduction, please take a moment to select a background theme of your choice from the options available. 
+                            You can click on interact title anytime to switch back to default theme cuz I know its as dope as Varchasvi's 
+                            latest song. Just kidding...... The song is dopper..
+                        </p>
+
+                        <button class="btn btn-dark mb-1" id="theme-select-one" 
+                        data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="500" onclick="theme_one()" 
+                        onmouseover="displayMessage()">Theme-1</button>
+
+                        <button class="btn btn-dark mb-1" id="theme-select-two" 
+                        data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="500" onclick="theme_two()" 
+                        onmouseover="displayMessage()">Theme-2</button>
+
+                        <button class="btn btn-dark mb-1" id="theme-select-three" 
+                        data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="500" onclick="theme_three()" 
+                        onmouseover="displayMessage()">Theme-3</button>
+
+                        <button class="btn btn-dark mb-1" id="theme-select-four" 
+                        data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="500" onclick="theme_four()" 
+                        onmouseover="displayMessage()">Theme-4</button>
+
+                        <button class="btn btn-dark mb-1" id="theme-select-five" 
+                        data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="500" onclick="theme_five()" 
+                        onmouseover="displayMessage()">Theme-5</button>
+
+                        <button class="btn btn-dark mb-1" id="theme-select-six" 
+                        data-aos="zoom-in-up" data-aos-delay="1000" data-aos-duration="500" onclick="theme_six()" 
+                        onmouseover="displayMessage()">Theme-6</button>
+
+                        <button class="btn btn-dark mb-1" id="theme-select-seven" 
+                        data-aos="zoom-in-up" data-aos-delay="1100" data-aos-duration="500" onclick="theme_seven()" 
+                        onmouseover="displayMessage()">Theme-7</button>
+
+                        <button class="btn btn-dark mb-1" id="theme-select-eight" 
+                        data-aos="zoom-in-up" data-aos-delay="1200" data-aos-duration="500" onclick="theme_eight()" 
+                        onmouseover="displayMessage()">Theme-8</button>
+
+                        <br><br>
+                        <p id="message-display">Take your time, and select one...</p>
+                    </div>
+                    <div class="col-sm-12 interact-user">
+                        <p>Please introduce yourself...</p>
+                        <button class="btn btn-primary" onclick="introduce()">Introduce Now</button>
+                    </div>
+                </div>
+                <div class="col-sm-8 mt-5">
+                    <div class="col-sm-12 chat-box" data-aos="flip-right" data-aos-delay="3000" data-aos-duration="2000">
+                        <button class="btn btn-light mt-2" id="chat-button" onclick="saySomethingGood()">Greet</button>
+                        <button class="btn btn-dark mt-2" id="chat-button-two" onclick="saySomethingBad()">Hate</button>
+                        <button class="btn btn-success mt-2" id="chat-button-three" onclick="goodbye()">Goodbye</button>
+                        <button class="btn btn-danger mt-2" id="chat-button-four" onclick="badbye()">Badbye</button>
+                        <hr>
+
+                        <p id="user">user:</p>
+                        <p id="user-text">...</p>
+                        <p id="bot">bot:</p>
+                        <p id="bot-text">...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--AOS JS CDN-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!--Bootstrap JS CDN-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--Bootstrap JS-->
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <!--External JS-->
+        <script src="../js/main.js"></script>
+    </body>
+</html>

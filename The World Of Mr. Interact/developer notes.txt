@@ -1,0 +1,8 @@
+Imported fonts
+
+font-family: 'Righteous', cursive;
+font-family: 'Crete Round', serif;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Fascinate Inline', cursive;
+font-family: 'Viga', sans-serif;

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!--AOS CSS CDN-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--Bootstrap CSS CDN-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--Bootstrap CSS Offline-->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!--External CSS-->
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/services.css">
+        <!--Import Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Crete+Round|Fascinate+Inline|PT+Sans+Caption|Prompt|Righteous|Viga" rel="stylesheet">
+
+
+
+        <title>WT Mini Project</title>
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!--NAV BAR-->
+                <div class="col-sm-12">
+                    <nav class="nav nav-tabs justify-content-end">
+                        <a class="nav-link" href="../home.html">Home</a>
+                        <a class="nav-link active" href="services.html">Services</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="interact.html">Interact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-11">
+                    <!--Content-->
+                    <div class="col-sm-12">
+                        <h1 id="page-title" data-aos="fade-right" data-aos-duration="1000">Services</h1>
+                    </div>
+                    <div class="service-intro col-sm-12">
+                        <p data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">Our services are divided into three types. You can choose one that you can easily afford. You can choose
+                            <strong onclick="readThemFirst()">SIMPLE PACK</strong> for basic entertainment. This include things which are mentioned in simple pack column. Check 
+                            it out now. If you are from a middle class family, then you should buy <strong onclick="readThemFirst()">ADVANCE PACK</strong> which will give you 
+                            better options to cry on your faith. But if you are as rich as 'Suniyo' then its good to buy <strong onclick="readThemFirst()">PREMIUM PACK</strong>. 
+                            This pack was gifted to 'Shizuka' by 'Suniyo', still she left the place with 'Nobita' and 'Dekisuki'. So now its 
+                            up to you. Choose wisely my friend.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row service-sections mt-5 justify-content-center">
+
+                <div class="col-sm-3 mr-5 service-box" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="500">
+                    <h1>SIMPLE PACK</h1>
+                    <ul>
+                        <li>Get basic set of memes</li>
+                        <li>No games included in this pack</li>
+                        <li>No possible way to get much laughter</li>
+                        <li>Cheap af</li>
+                    </ul>
+                    <button class="btn btn-success" onclick="buyNowSimple()">Buy Now</button>
+                </div>
+
+                <div class="col-sm-3 mr-5 service-box" data-aos="flip-up" data-aos-delay="1500" data-aos-duration="500">
+                    <h1>ADVANCE PACK</h1>
+                    <ul>
+                        <li>Get 9gags copied memes</li>
+                        <li>Some basic games like tic-tac-toe</li>
+                        <li>You can laugh for a month</li>
+                        <li>Still affordable</li>
+                    </ul>
+                    <button class="btn btn-success" onclick="buyNowAdvance()">Buy Now</button>
+                </div>
+                
+                <div class="col-sm-3 mr-5 service-box" data-aos="flip-up" data-aos-delay="2000" data-aos-duration="500">
+                    <h1>PREMIUM PACK</h1>
+                    <ul>
+                        <li>Shizuka nearly died laughing</li>
+                        <li>Your life will become a game</li>
+                        <li>You and everyone will laugh at you</li>
+                        <li>Expensive af</li>
+                    </ul>
+                    <button class="btn btn-danger" onclick="cryNow()">Cry Now</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--AOS JS CDN-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!--Bootstrap JS CDN-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--Bootstrap JS-->
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <!--External JS-->
+        <script src="../js/main.js"></script>
+    </body>
+</html>

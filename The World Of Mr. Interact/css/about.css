@@ -1,0 +1,15 @@
+.about-content p{
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(243, 228, 11);
+}
+
+.about-content a, p strong{
+    cursor: pointer;
+    font-style: italic;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+.about-content p strong:hover{
+    color: azure;
+}

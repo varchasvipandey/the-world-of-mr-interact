@@ -1,0 +1,12 @@
+#home-title{
+    margin-top: 15%;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 4rem;
+    color: aliceblue;
+    text-align: center;
+}
+#home-quote{
+    font-family: 'PT Sans Caption', sans-serif;
+    text-align: center;
+    color: azure;
+}
